@@ -1,0 +1,8 @@
+{
+  "name": "newrelic-node-prisma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:quipper/newrelic-node-prisma.git",
+  "author": "YutaUra <yuuta3594@outlook.jp>",
+  "license": "MIT"
+}
