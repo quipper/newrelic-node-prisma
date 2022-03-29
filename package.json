@@ -1,8 +1,28 @@
 {
   "name": "newrelic-node-prisma",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:quipper/newrelic-node-prisma.git",
   "author": "YutaUra <yuuta3594@outlook.jp>",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "yarn lint",
+    "build": "tsc",
+    "lint": "prettier -c src && eslint src --ext .ts",
+    "lint:fix": "prettier -w src && eslint src --ext .ts --fix"
+  },
+  "devDependencies": {
+    "@tsconfig/node16-strictest": "^1.0.0",
+    "@types/node": "16",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.6.1",
+    "typescript": "^4.6.3"
+  }
 }
